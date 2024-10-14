@@ -1,6 +1,6 @@
 
 # Project management
-Ứng dụng quản lý dự án nhóm được đề xuất thiết kế dành cho các bạn sinh viên, nhân viên, quản lý, freelancer muốn làm dự án và muốn quản lý dự án một cách hiệu quả nhất, cũng như có thể xem được hiệu suất, tiến độ của dự án trong suốt thời gian làm dự án
+Ứng dụng quản lý dự án nhóm được đề xuất thiết kế dành cho các bạn sinh viên, nhân viên, quản lý, freelancer muốn làm dự án và muốn quản lý dự án một cách hiệu quả nhất, cũng như có thể xem được hiệu suất, tiến độ của dự án trong suốt thời gian làm dự án ./.
 
 
 ## Features
