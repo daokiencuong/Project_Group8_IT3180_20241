@@ -1,7 +1,4 @@
 
-<<<<<<< Updated upstream
-# Project management
-=======
 <div align="center">
   <h1 align="center">PROJECT MANAGEMENT</h1>
   <img  src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&label=Spring%20Boot&labelColor=white&color=green" alt="springboot"/> &nbsp;
@@ -10,7 +7,6 @@
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&color=white" alt="js" />
 </div>
 
->>>>>>> Stashed changes
 Ứng dụng quản lý dự án nhóm được đề xuất thiết kế dành cho các bạn sinh viên, nhân viên, quản lý, freelancer muốn làm dự án và muốn quản lý dự án một cách hiệu quả nhất, cũng như có thể xem được hiệu suất, tiến độ của dự án trong suốt thời gian làm dự án
 
 
