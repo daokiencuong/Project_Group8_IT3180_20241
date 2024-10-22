@@ -3,7 +3,7 @@ spring:
     name: project-management
   datasource:
     url: jdbc:postgresql://localhost:5432/
-    username: postgress
+    username: postgres
     password:     
     driver-class-name: org.postgresql.Driver  
   jpa:
@@ -19,3 +19,8 @@ spring:
 server:
     host: localhost
     port: 8000
+
+  
+logging:
+  level:
+    org.springframework.security: DEBUG
