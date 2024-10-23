@@ -7,7 +7,6 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.CsrfConfigurer;
 import org.springframework.security.config.annotation.web.configurers.HeadersConfigurer.FrameOptionsConfig;
-import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -29,7 +28,7 @@ public class SecurityConfig {
         http.formLogin( (formLogin) -> formLogin.loginProcessingUrl("/login"));
         
         http.authorizeHttpRequests( (req) -> req
-                .requestMatchers("/api/test", "/login").permitAll()
+                .requestMatchers("/api/test", "/api/auth/**", "/login/**").permitAll()
                 // .requestMatchers("/api/project/update").hasRole("LEADER")
                 .anyRequest().authenticated()            
         );

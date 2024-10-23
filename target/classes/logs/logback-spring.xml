@@ -1,0 +1,29 @@
+<configuration>
+    <appender name="CSV_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>src/main/resources/logs/application.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeBasedRollingPolicy">
+            <maxFileSize>100MB</maxFileSize>
+        </rollingPolicy>
+
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss},%logger{10},%msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="STARTUP_RESET" class="ch.qos.logback.core.FileAppender">
+        <file>src/main/resources/logs/application.log</file>
+        <append>false</append> 
+        <encoder>
+            <pattern></pattern> 
+        </encoder>
+    </appender>
+
+
+    <logger name="startup-reset" level="INFO" additivity="false">
+        <appender-ref ref="STARTUP_RESET" />
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="CSV_FILE" />
+    </root>
+</configuration>

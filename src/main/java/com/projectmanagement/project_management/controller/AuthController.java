@@ -14,15 +14,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/auth")
 public class AuthController {
     
-    // @GetMapping(value = "/login") 
-    // public ResponseEntity<String> login() {
-    //     return ResponseEntity.ok("WELCOME HOME CHEATER ☠️");
-    // }
+    @GetMapping(value = "/login") 
+    public ResponseEntity<String> login() {
+        return ResponseEntity.ok("WELCOME HOME CHEATER ☠️");
+    }
 
-    // @GetMapping(value = "/signup")
-    // public ResponseEntity<String> signup() {
-    //     return ResponseEntity.ok("BONJOUR");
-    // }
+    @GetMapping(value = "/signup")
+    public ResponseEntity<String> signup() {
+        return ResponseEntity.ok("BONJOUR");
+    }
 
 
 }
